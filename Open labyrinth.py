@@ -9,11 +9,11 @@ def checkio(maze_map):
         if pos == (10,10):
             return ans
         print ans,pos
-        if maze_map[pos[0] + 1][pos[1]] == 0 and visited[pos[0]+1][pos[1]]==0:
+        if maze_map[pos[0] + 1][pos[1]] == 0 and visited[pos[0] + 1][pos[1]]==0:
             result=func((pos[0] + 1 , pos[1]),maze_map,ans + 'S')
             if result:
                 return result
-        if maze_map[pos[0] - 1][pos[1]] == 0 and visited[pos[0] -1 ][pos[1]]==0:
+        if maze_map[pos[0] - 1][pos[1]] == 0 and visited[pos[0] - 1 ][pos[1]]==0:
             result=func((pos[0] - 1 , pos[1]),maze_map,ans + 'N')
             if result:
                 return result
